@@ -17,4 +17,6 @@ Resolve local merge master into feat_1 & add this line
 
 New change to merge from feat_1 into develop
 
-New change to merge feat_2 into master
+New second change to merge from feat_1 into develop
+
+New second change to merge from feat_2 into feat_1
