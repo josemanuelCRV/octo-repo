@@ -14,3 +14,5 @@ other change from develop
 1. This feat_2 start form master
 
 Resolve local merge master into feat_1 & add this line
+
+New change to merge from feat_1 into develop
