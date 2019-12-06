@@ -25,3 +25,6 @@ New second change to merge from feat_2 into feat_1
 
 --- Create new feature_1
 
+--- New change in feature_1
+
+--- Other new change in feature_1
