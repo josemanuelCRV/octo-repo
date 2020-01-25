@@ -30,4 +30,4 @@ New second change to merge from feat_2 into feat_1
 --- Other new change in feature_1
 
 
-![Shopping Cart Demo](demo/demo.gif)
+![Shopping Cart Demo](demo/demo2.gif)
