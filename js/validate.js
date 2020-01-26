@@ -8,11 +8,11 @@
 //  }
 //}
 
-function validateUser(formfield) {
+function validateField(formfield) {
   //var x = document.forms["keyForm"]["githubuser"].value;
   var x = formfield;
   var ex = "the filed " + formfield + "is empty";
-  
+
   if (formfiled == "") {
     //alert("Name must be filled out");
     return ex;
@@ -23,10 +23,10 @@ function validateUser(formfield) {
 
 function validateFormOnSubmit(theForm) {
     var reason = "";
-    reason += validateUser(theForm.githubuser);
-    reason += validateToken(theForm.githubtoken);
-    reason += validateOrg(theForm.githuborg);
-    reason += validateRepo(theForm.githubrepo);
+    reason += validateField(theForm.githubuser);
+    reason += validateField(theForm.githubtoken);
+    reason += validateField(theForm.githuborg);
+    reason += validateField(theForm.githubrepo);
 
     if (reason != "") {
         alert("Some fields need correction:\n" + reason);
