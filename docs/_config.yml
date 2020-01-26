@@ -3,13 +3,9 @@ theme: jekyll-theme-slate
 gem "github-pages", group: :jekyll_plugins
 
 
-title: [SSH KEY GITHUB AGGREGATOR]
-description: [The follow Script generates an aggregate an SSH key to Deploy-Keys section of the specified
-Github repository, and the private part is displayed on the screen in base64 format.]
-
-contents: [Some contents for the body-page]
-
-
+title: [SSH KEY AGGREGATOR]
+description: [Aggregate an SSH key to Deploy-Keys section of the specified
+Github repository. The private part is displayed on the screen in base64 format.]
 
 
 show_downloads: [true]
