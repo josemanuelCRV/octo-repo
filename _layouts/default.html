@@ -46,12 +46,12 @@ function validateForm() {
       <section id="main_content" class="inner">
 
 
-        <form name="myForm" onsubmit="return validateForm()" method="post">
+        <form name="myForm" action="/script/run.sh" onsubmit="return validateForm()" method="post">
           Name: <input type="text" name="fname">
           <input type="submit" value="Submit">
         </form>
 
-        <form action="/script/script.php">
+        <form action="javascript:alert('Hello $githubuser, I am being submitted $githubtoken');">
           GITHUB-USER:<br>
           <input type="text" name="githubuser">
           <br>
@@ -64,7 +64,7 @@ function validateForm() {
           GITHUB-REPO:<br>
           <input type="text" name="githubrepo">
           <br>
-          <input type="submit" value="Open Script">
+          //<input type="submit" value="Open Script">
         </form>
 
         <form action="javascript:alert('Hello there, I am being submitted');">
