@@ -31,3 +31,4 @@ New second change to merge from feat_2 into feat_1
 
 
 ![Shopping Cart Demo](demo/demo2.gif)
+
