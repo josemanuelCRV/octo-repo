@@ -1,11 +1,6 @@
 #!/bin/bash
 clear
 
-# GITHUB-USER: x283925
-# GITHUB-TOKEN: a7f259ca94785e36c7a73e73a35334e7c205c05c
-# GITHUB-ORG:  cib-application-test
-# GITHUB-REPO: cib-apptest-secrets
-
 echo ""
 echo "SSH GITHUB KEYS AGREGATOR"
 echo "************************************************************************************"
@@ -60,10 +55,13 @@ echo "**************************************************************************
 echo "===== DEPLOY-KEY TO GITHUB ========================================================="
 echo "************************************************************************************"
 
+
+
 curl -i \
 -H "Accept: application/json" \
 -H "Content-Type:application/json" \
--X POST --data "$(generate_post_data)" -u ${USER}:${GIT_TOKEN} https://github.alm.europe.cloudcenter.corp/api/v3/repos/$ORG/$REPO/keys
+-X POST --data "$(generate_post_data)" -u ${USER}:${GIT_TOKEN} https://api.github.com/repos/$ORG/$REPO/keys
+
 
 
 pvk="$REPO-rsa"
@@ -87,5 +85,5 @@ cat base64-PVK
 echo ""
 echo "_______________________________________________________________________________________"
 echo ""
-echo "Check deployed Key in: >> https://github.alm.europe.cloudcenter.corp/$ORG/$REPO/settings/keys"
+echo "Check deployed Key in: >> https://github.com/settings/tokens" 
 echo ""
