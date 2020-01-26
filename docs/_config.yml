@@ -4,8 +4,12 @@ gem "github-pages", group: :jekyll_plugins
 
 
 title: [SSH KEY GITHUB AGGREGATOR]
-description: [The follow Script generates an SSH key.
-The public part (*.pub) will be deploy in the Deploy-Keys section of the specified
+description: [The follow Script generates an aggregate an SSH key to Deploy-Keys section of the specified
 Github repository, and the private part is displayed on the screen in base64 format.]
+
+contents: [Some contents for the body-page]
+
+
+
 
 show_downloads: [true]
