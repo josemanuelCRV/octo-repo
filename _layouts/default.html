@@ -9,16 +9,18 @@
 
 {% seo %}
 
-function validateForm() {
-  var x = document.forms["keyForm"]["githubuser"].value;
-  if (x == "") {
-    alert("Name must be filled out");
-    return false;
-  }
-}
-
+    <script>
+      function validateForm() {
+        var x = document.forms["keyForm"]["githubuser"].value;
+        if (x == "") {
+          alert("Name must be filled out");
+          return false;
+        }
+      }
+    </script> 
 
   </head>
+
 
   <body>
 
