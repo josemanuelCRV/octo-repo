@@ -10,7 +10,7 @@
 {% seo %}
 
 function validateForm() {
-  var x = document.forms["myForm"]["fname"].value;
+  var x = document.forms["keyForm"]["githubuser"].value;
   if (x == "") {
     alert("Name must be filled out");
     return false;
@@ -51,7 +51,8 @@ function validateForm() {
           <input type="submit" value="Submit">
         </form>
 
-        <form action="javascript:alert('Hello $githubuser, I am being submitted $githubtoken');">
+        <!-- <form action="javascript:alert('Hello $githubuser, I am being submitted $githubtoken');"> -->
+        <form name="keyForm" onsubmit="return validateForm()">
           GITHUB-USER:<br>
           <input type="text" name="githubuser">
           <br>
