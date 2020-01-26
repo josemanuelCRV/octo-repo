@@ -9,6 +9,11 @@
 
 {% seo %}
 
+<script type="text/javascript">/js/validate.js</script>
+
+
+
+ <!-- EMBEBED 
     <script>
       function validateForm() {
         var x = document.forms["keyForm"]["githubuser"].value;
@@ -18,6 +23,8 @@
         }
       }
     </script> 
+-->
+
 
   </head>
 
@@ -53,7 +60,7 @@
           <input type="submit" value="Submit">
         </form>
 -->
-        <form name="keyForm" action="#" onsubmit="return validateForm()" method="post">
+        <form name="keyForm" action="#" onsubmit="return validateFormOnSubmit(this);" method="post">
           GITHUB-USER:<br>
           <input type="text" name="githubuser">
           <br>
