@@ -3,4 +3,4 @@
 ## SSH-KEY AGGREGATOR
 
 
-![Generating Demo](demo/demo2.gif)
+![Generating Demo](assets/demo2.gif)
