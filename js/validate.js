@@ -8,10 +8,11 @@
 //  }
 //}
 
-function validateForm(formfield) {
+function validateUser(formfield) {
   //var x = document.forms["keyForm"]["githubuser"].value;
   var x = formfield;
   var ex = "the filed " + formfield + "is empty";
+  
   if (formfiled == "") {
     //alert("Name must be filled out");
     return ex;
